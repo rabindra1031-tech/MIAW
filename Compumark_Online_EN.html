@@ -1,0 +1,19 @@
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DQz000007jf1o',
+				'Compumark_Online_EN',
+				'https://cpa-global--preprod.sandbox.my.site.com/ESWCompumarkOnlineEN1757958044775',
+				{
+					scrt2URL: 'https://cpa-global--preprod.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://cpa-global--preprod.sandbox.my.site.com/ESWCompumarkOnlineEN1757958044775/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
